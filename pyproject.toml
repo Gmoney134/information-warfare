@@ -1,0 +1,22 @@
+[project]
+name = "information-warfare"
+version = "0.1.0"
+description = "Analyzes media articles for similarities to known information warfare narratives"
+authors = [
+    {name = "enpfeff"}
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+]
+
+[project.scripts]
+start = "app.main:start"
+
+[tool.poetry]
+packages = [{include = "app", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
