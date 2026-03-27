@@ -5,10 +5,12 @@ description = "Analyzes media articles for similarities to known information war
 authors = [
     {name = "enpfeff"}
 ]
-requires-python = ">=3.11,<3.12"
+requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.110.0",
     "uvicorn[standard]>=0.29.0",
+    "trafilatura>=2.0.0",
+    "openai>=1.30.0",
 ]
 
 [project.scripts]
